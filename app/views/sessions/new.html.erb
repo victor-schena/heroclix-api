@@ -1,3 +1,4 @@
+<div class="session-form">
 <%= form_for :session, url: sign_in_path do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -11,5 +12,5 @@
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
-<p>New user? <%= link_to "Sign up now!", new_user_path %></p>
 <% end %>
+</div>
