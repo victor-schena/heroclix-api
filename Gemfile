@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # For hashing function on database security
 gem 'bcrypt'
+
+# Twitter-bootstrap
+gem 'bootstrap-sass'

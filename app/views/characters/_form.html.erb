@@ -1,0 +1,46 @@
+<%= form_for @character do |form| %>
+  <% if character.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(character.errors.count, "error") %> prohibited this character from being saved:</h2>
+
+      <ul>
+      <% character.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :collection_number %>
+    <%= form.text_field :collection_number %>
+  </div>
+  <div class="field">
+    <%= form.label :point_value %>
+    <%= form.text_field :point_value %>
+  </div>
+  <div class="field">
+    <%= form.label :trait_symbol %>
+    <%= form.check_box(:trait_symbol) %>
+  </div>
+  <div class="field">
+    <%= form.label :range %>
+    <%= form.text_field :range %>
+  </div>
+  <div class="field">
+    <%= form.label :total_clicks %>
+    <%= form.text_field :total_clicks %>
+  </div>
+  <div class="field">
+    <%= form.label :targets %>
+    <%= form.text_field :targets %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Salvar"%>
+  </div>
+<% end %>
