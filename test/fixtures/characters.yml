@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  collection_number: MyString
+  point_value: 1
+  trait_symbol: false
+  range: 1
+  total_clicks: 1
+  targets: 1
+
+two:
+  name: MyString
+  collection_number: MyString
+  point_value: 1
+  trait_symbol: false
+  range: 1
+  total_clicks: 1
+  targets: 1
